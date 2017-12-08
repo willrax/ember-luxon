@@ -1,26 +1,21 @@
 # ember-luxon
 
-This README outlines the details of collaborating on this Ember addon.
+An addon to allow importing of [Luxon](https://moment.github.io/luxon/) in your Ember Apps.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-luxon`
-* `yarn install`
+* `ember install ember-luxon`;
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+```
+import { DateTime } from 'ember-luxon/luxon'`;
+import Component from '@ember/component';
 
-## Running Tests
 
-* `yarn test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+export default Component.extend({
+  theTime: computed(function() {
+    return DateTime.local()
+  })
+});
+```

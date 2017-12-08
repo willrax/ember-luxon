@@ -8,7 +8,7 @@ An addon to allow importing of [Luxon](https://moment.github.io/luxon/) in your 
 
 ## Usage
 
-```
+```js
 import { DateTime, Duration, Info, Interval, Settings, Zone } from 'ember-luxon/luxon'`;
 import Component from '@ember/component';
 

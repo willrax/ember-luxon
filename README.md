@@ -9,9 +9,8 @@ An addon to allow importing of [Luxon](https://moment.github.io/luxon/) in your 
 ## Usage
 
 ```
-import { DateTime } from 'ember-luxon/luxon'`;
+import { DateTime, Duration, Info, Interval, Settings, Zone } from 'ember-luxon/luxon'`;
 import Component from '@ember/component';
-
 
 export default Component.extend({
   theTime: computed(function() {

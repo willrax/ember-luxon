@@ -1,6 +1,9 @@
 /* eslint-env node */
 'use strict';
 
-module.exports = {
+const emberRollup = require('ember-rollup');
+const runtimeDependencies = ['luxon'];
+
+module.exports = emberRollup(runtimeDependencies, {
   name: 'ember-luxon'
-};
+});

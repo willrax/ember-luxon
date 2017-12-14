@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import { DateTime } from 'ember-luxon/luxon';
+import { DateTime } from 'luxon';
 import { computed } from '@ember/object';
 
 export default Controller.extend({

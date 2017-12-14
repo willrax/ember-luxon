@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^6.6.0",
-    "ember-rollup": "^0.3.8",
+    "ember-rollup": "https://github.com/willrax/ember-rollup#d10b358011054cc73eb5eb56deb7da193bcb632c",
     "luxon": "^0.2.7"
   },
   "devDependencies": {

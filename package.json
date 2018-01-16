@@ -18,7 +18,7 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.6.0",
+    "ember-cli-babel": "^6.11.0",
     "ember-rollup": "https://github.com/willrax/ember-rollup#d10b358011054cc73eb5eb56deb7da193bcb632c",
     "luxon": "^0.3.1"
   },

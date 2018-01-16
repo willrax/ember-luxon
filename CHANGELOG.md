@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.2.0] - 2018-01-16
+- Bump ember-cli-babel from 6.10.0 to 6.11.0
+- Bump ember-cli from 2.17.1 to 2.18.0 
+- Bump luxon from 0.2.9 to 0.3.1
+- Bump ember-source from 2.17.0 to 2.18.0
+- Bump ember-cli-qunit from 4.1.1 to 4.2.1
+
 ## [1.1.0] - 2017-12-14
 ### Depreacted
 - Moved to importing luxon directly without the namespace.

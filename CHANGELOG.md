@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- Remove ember-rollup and use es6-transformation to handle the es6 modules from luxon.
 
 ## [1.2.0] - 2018-01-16
 - Bump ember-cli-babel from 6.10.0 to 6.11.0

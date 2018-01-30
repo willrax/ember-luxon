@@ -21,7 +21,7 @@
     "broccoli-rollup": "^2.0.0",
     "ember-cli-babel": "^6.11.0",
     "ember-cli-es6-transform": "^0.0.3",
-    "luxon": "^0.3.1"
+    "luxon": "^0.4.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

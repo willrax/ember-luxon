@@ -1,1 +1,1 @@
-export { default, luxonIsAfter } from 'ember-luxon/helpers/luxon-is-after';
+export { default } from 'ember-luxon/helpers/luxon-is-after';

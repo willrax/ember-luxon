@@ -1,1 +1,1 @@
-export { default, luxonIsSame } from 'ember-luxon/helpers/luxon-is-same';
+export { default } from 'ember-luxon/helpers/luxon-is-same';

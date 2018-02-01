@@ -1,1 +1,1 @@
-export { default, luxonIsBetween } from 'ember-luxon/helpers/luxon-is-between';
+export { default } from 'ember-luxon/helpers/luxon-is-between';

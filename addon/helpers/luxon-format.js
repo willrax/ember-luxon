@@ -1,6 +1,6 @@
 import Helper from '@ember/component/helper';
 
-export default class LuxonFormat extends Helper {
+export default Helper.extend({
   compute([dateOne, format = false]) {
     if (format) {
       return dateOne.toFormat(format);
@@ -8,4 +8,4 @@ export default class LuxonFormat extends Helper {
       return dateOne.toLocaleString();
     }
   }
-}
+})

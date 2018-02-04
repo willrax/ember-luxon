@@ -2,7 +2,7 @@
 'use strict';
 
 const Rollup = require('broccoli-rollup');
-const { es6Transform } = require('ember-cli-es6-transform');
+const transformer = require('ember-cli-es6-transform');
 const mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
         input: 'luxon.js',
         output: {
           file: 'luxon.js',
-          format: 'es',
+          format: 'es'
         }
       }
     });
@@ -28,7 +28,7 @@ module.exports = {
     const babel = this.parent.findAddonByName('ember-cli-babel');
     const babelOptions = babel.buildBabelOptions();
 
-    let foo = es6Transform(rollupTree, babelOptions);
-    return mergeTrees([foo, tree]);
+    let es6Tree = transformer.es6Transform(rollupTree, babelOptions);
+    return mergeTrees([es6Tree, tree]);
   }
 };

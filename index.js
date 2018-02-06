@@ -15,6 +15,7 @@ module.exports = {
   },
 
   treeForVendor(tree) {
+    let allTrees = [];
     let rollupTree = new Rollup('./node_modules/luxon/src', {
       rollup: {
         input: 'luxon.js',
@@ -27,8 +28,14 @@ module.exports = {
 
     const babel = this.parent.findAddonByName('ember-cli-babel');
     const babelOptions = babel.buildBabelOptions();
+    const es6Tree = transformer.es6Transform(rollupTree, babelOptions);
 
-    let es6Tree = transformer.es6Transform(rollupTree, babelOptions);
-    return mergeTrees([es6Tree, tree]);
+    allTrees.push(es6Tree);
+
+    if (tree) {
+      allTrees.push(tree);
+    }
+
+    return mergeTrees(allTrees);
   }
 };

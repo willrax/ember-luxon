@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.2.2]
+- Add CircleCI for test running
+- Fix build for node 4
+- Fix to check tree exists before attempting mergeTrees
+
+## [1.2.1] - 2018-01-19
 - Remove ember-rollup and use es6-transformation to handle the es6 modules from luxon.
 
 ## [1.2.0] - 2018-01-16

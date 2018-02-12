@@ -4,6 +4,8 @@
 const Rollup = require('broccoli-rollup');
 const transformer = require('ember-cli-es6-transform');
 const mergeTrees = require('broccoli-merge-trees');
+const path = require('path');
+const resolve = require('resolve');
 
 module.exports = {
   name: 'ember-luxon',
@@ -15,8 +17,10 @@ module.exports = {
   },
 
   treeForVendor(tree) {
+    const srcPath = path.join(resolve.sync('luxon'), '..', '..', '..', 'src');
+
     let allTrees = [];
-    let rollupTree = new Rollup('./node_modules/luxon/src', {
+    let rollupTree = new Rollup(srcPath, {
       rollup: {
         input: 'luxon.js',
         output: {

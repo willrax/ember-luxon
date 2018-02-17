@@ -1,6 +1,7 @@
 # ember-luxon
 
-[![CircleCI](https://circleci.com/gh/willrax/ember-luxon/tree/master.svg?style=svg)](https://circleci.com/gh/willrax/ember-luxon/tree/master)
+[![NPM version](https://img.shields.io/npm/v/ember-luxon.svg?style=for-the-badge)](https://npmjs.com/package/ember-luxon)
+[![CircleCI](https://img.shields.io/circleci/project/github/willrax/ember-luxon/master.svg?style=for-the-badge)](https://circleci.com/gh/willrax/ember-luxon/tree/master)
 
 An addon to allow importing of [Luxon](https://moment.github.io/luxon/) in your Ember Apps.
 

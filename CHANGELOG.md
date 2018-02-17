@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+- Bumps ember-cli-qunit from 4.3.0 to 4.3.2.
+
 ## [1.3.0]
 - Adds helpers (see readme)
 - Fixes an issue around the accessing of node_modules while compiling.

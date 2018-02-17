@@ -26,7 +26,7 @@ export default Component.extend({
 
 Ember luxon provices some helpers for use in templates.
 
-*luxon*
+**luxon**
 
 Given a string and a format it will generate a luxon datetime object.
 
@@ -34,7 +34,7 @@ Given a string and a format it will generate a luxon datetime object.
 {{luxon "2014 Aug 06" "yyyy LLL dd"}}
 ```
 
-*luxon-diff*
+**luxon-diff**
 
 This will determine the length of time between two days.
 Precision is optional and will default to milliseconds.
@@ -44,7 +44,7 @@ Precision is optional and will default to milliseconds.
 {{luxon-diff dateOne dateTwo precision="days"}} /* 1
 ```
 
-*luxon-format*
+**luxon-format**
 
 Given a datetime object it will format it. If you don't provide a format string
 ember-luxon will default to using local formatting.
@@ -54,7 +54,7 @@ ember-luxon will default to using local formatting.
 {{luxon-format dateOne}}                      /* "4/20/2017"
 ```
 
-*luxon-is-after*
+**luxon-is-after**
 
 Will return true or false depending on whether the first dateTime is after the second.
 
@@ -63,16 +63,16 @@ Will return true or false depending on whether the first dateTime is after the s
 {{luxon-is-after lateDate earlyDate}} /* false
 ```
 
-*luxon-is-before*
+**luxon-is-before**
 
 Will return true or false depending on whether the first dateTime is before the second.
 
 ```hbs
-{{luxon-is-before earlyDate lateDate}} /* false
-{{luxon-is-before lateDate earlyDate}} /* true
+{{luxon-is-before earlyDate lateDate}} /* true
+{{luxon-is-before lateDate earlyDate}} /* false
 ```
 
-*luxon-is-before*
+**luxon-is-before**
 
 Will return true or false depending on whether the first dateTime is contained within a pair of dates.
 
@@ -80,7 +80,7 @@ Will return true or false depending on whether the first dateTime is contained w
 {{luxon-is-before dateTime startDate endDate}} /* true
 ```
 
-*luxon-is-same*
+**luxon-is-same**
 
 Will return true or false depending on whether the first dateTime is the same as the other date.
 You can set the precision here to verify if it is the day, millisecond, hour etc.

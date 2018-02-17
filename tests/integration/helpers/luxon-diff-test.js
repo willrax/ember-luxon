@@ -20,7 +20,7 @@ test('it provides a diff without a precision', function(assert) {
 
 test('it provides a diff with a precision of days', function(assert) {
   let startDate = DateTime.local();
-  let endDate = DateTime.local().plus({ days: 3 });
+  let endDate = startDate.plus({ days: 3 });
 
   this.set('startDate', startDate);
   this.set('endDate', endDate);

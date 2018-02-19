@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+
+## [1.3.1]
 - Bumps ember-cli-qunit from 4.3.0 to 4.3.2.
 - Bumps luxon from 0.3.1 to 0.4.0.
 - Bump ember-cli from 2.18.1 to 3.0.0.

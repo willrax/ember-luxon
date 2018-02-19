@@ -12,14 +12,21 @@ module.exports = {
   included(app) {
     this._super.included.apply(app, arguments);
 
+    const intlPath = path.join(resolve.sync('intl'), '..', 'dist', 'intl.js')
+    const options = this.app.project.config(app.env)['ember-luxon'] || {};
+
+    if (options.includeIntlPolyfill) {
+      app.import(intlPath);
+    }
+
     app.import('vendor/luxon.js');
   },
 
   treeForVendor(tree) {
-    const srcPath = path.join(resolve.sync('luxon'), '..', '..', '..', 'src');
+    const luxonPath = path.join(resolve.sync('luxon'), '..', '..', '..', 'src');
 
     let allTrees = [];
-    let rollupTree = new Rollup(srcPath, {
+    let rollupTree = new Rollup(luxonPath, {
       rollup: {
         input: 'luxon.js',
         output: {

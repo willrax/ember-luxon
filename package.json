@@ -22,6 +22,7 @@
     "broccoli-rollup": "^2.0.0",
     "ember-cli-babel": "^6.11.0",
     "ember-cli-es6-transform": "^0.0.3",
+    "intl": "1.2.5",
     "luxon": "^0.4.0"
   },
   "devDependencies": {
@@ -37,16 +38,16 @@
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
-    "ember-maybe-import-regenerator": "^0.1.6",
     "ember-disable-prototype-extensions": "^1.1.2",
+    "ember-load-initializers": "^1.0.0",
+    "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-resolver": "^4.0.0",
     "ember-source": "~2.18.0",
     "ember-source-channel-url": "^1.0.1",
     "ember-try": "^0.2.23",
     "ember-welcome-page": "^3.0.0",
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^5.2.1",
-    "ember-load-initializers": "^1.0.0",
-    "ember-resolver": "^4.0.0",
     "loader.js": "^4.2.3"
   },
   "engines": {

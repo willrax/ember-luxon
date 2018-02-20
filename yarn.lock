@@ -4282,9 +4282,9 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-luxon@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-0.4.0.tgz#e7146ce52a6db7e82448438827860092d75bb8d6"
+luxon@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-0.5.2.tgz#80d93f8e8a30e3a5bafa1d05a464872920e08be1"
   dependencies:
     full-icu "^1.2.0"
 

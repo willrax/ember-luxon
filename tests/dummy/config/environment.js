@@ -19,7 +19,7 @@ module.exports = function(environment) {
     },
 
     'ember-luxon': {
-      includeIntlPolyfill: false
+      includeIntlPolyfill: true
     },
 
     APP: {

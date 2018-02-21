@@ -9,6 +9,18 @@ An addon to allow importing of [Luxon](https://moment.github.io/luxon/) in your 
 
 * `ember install ember-luxon`;
 
+Most modern browers will work fine with luxon. If you need to support legacy browsers you will need to include some polyfills.
+
+You can provide an option in your apps `ember-cli-build.js` file and we'll add [intl.js](https://github.com/andyearnshaw/Intl.js/) to your build.
+
+```js
+'ember-luxon': {
+  includeIntlPolyfill: true
+}
+```
+
+See the Luxon [support matrix](https://moment.github.io/luxon/docs/manual/matrix.html) for more information and which browsers support which features and other caveats.
+
 ## Usage
 
 ```js

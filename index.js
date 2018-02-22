@@ -12,7 +12,7 @@ module.exports = {
   included(app) {
     this._super.included.apply(app, arguments);
 
-    const intlPath = path.join(resolve.sync('intl'), '..', 'dist', 'intl.js')
+    const intlPath = path.join(resolve.sync('intl'), '..', 'dist', 'Intl.js')
     const options = this.app.project.config(app.env)['ember-luxon'] || {};
 
     if (options.includeIntlPolyfill) {

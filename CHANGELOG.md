@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 - Add option to add include polyfills in build.
+- Bump luxon from 0.4.0 to 0.5.3.
 
 ## [1.3.1]
 - Bumps ember-cli-qunit from 4.3.0 to 4.3.2.

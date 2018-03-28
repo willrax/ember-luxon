@@ -23,7 +23,7 @@
     "ember-cli-babel": "^6.11.0",
     "ember-cli-es6-transform": "^0.0.3",
     "intl": "1.2.5",
-    "luxon": "^0.5.3"
+    "luxon": "^1.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

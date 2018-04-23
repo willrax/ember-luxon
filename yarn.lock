@@ -4254,8 +4254,8 @@ lru-cache@^4.0.1:
     yallist "^2.1.2"
 
 luxon@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.0.0.tgz#ec1cba8cf53be14d2375c2f17e3468eb195c20bb"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.1.0.tgz#52f4eba14772a7620ad7c78055ee28dba53ee002"
 
 make-dir@^1.0.0:
   version "1.1.0"

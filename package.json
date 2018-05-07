@@ -1,6 +1,6 @@
 {
   "name": "ember-luxon",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Adds luxon to your Ember application",
   "keywords": [
     "ember-addon"

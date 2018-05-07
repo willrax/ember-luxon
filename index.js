@@ -10,8 +10,8 @@ module.exports = {
   name: 'ember-luxon',
 
   included(app) {
-    this._super.included.apply(app, arguments);
-
+    this._super.included.apply(this, arguments);
+    this.app = this._findHost();
     const intlPath = path.join(resolve.sync('intl'), '..', 'dist', 'Intl.js')
     const options = this.app.project.config(app.env)['ember-luxon'] || {};
 
@@ -36,7 +36,7 @@ module.exports = {
       }
     });
 
-    const babel = this.parent.findAddonByName('ember-cli-babel');
+    const babel = this.app.project.findAddonByName('ember-cli-babel');
     const babelOptions = babel.buildBabelOptions();
     const es6Tree = transformer.es6Transform(rollupTree, babelOptions);
 

@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## 1.4.1
+- Updates a few dependencies
+- Fixes an issue when installed as a subaddon.
+- Bumps luxon to 1.2.0
+
 ## 1.4.0
 - Add option to add include polyfills in build.
 - Bump luxon from 0.4.0 to 0.5.3.

@@ -6,19 +6,11 @@ module.exports = function() {
   return Promise.all([
     getChannelURL('release'),
     getChannelURL('beta'),
-    getChannelURL('canary'),
+    getChannelURL('canary')
   ]).then((urls) => {
     return {
       useYarn: true,
       scenarios: [
-        {
-          name: 'ember-lts-2.12',
-          npm: {
-            devDependencies: {
-              'ember-source': '~2.12.0'
-            }
-          }
-        },
         {
           name: 'ember-lts-2.16',
           npm: {

@@ -20,9 +20,8 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "broccoli-rollup": "2.1.1",
-    "ember-cli-babel": "6.16.0",
-    "ember-cli-es6-transform": "^0.0.3",
+    "ember-auto-import": "^1.2.8",
+    "ember-cli-babel": "^6.16.0",
     "intl": "1.2.5",
     "luxon": "1.3.3"
   },

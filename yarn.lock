@@ -4337,8 +4337,8 @@ lru-cache@^4.0.1:
     yallist "^2.1.2"
 
 luxon@^1.0.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.2.0.tgz#d438567c890c05c8fcb2d462af7ea66a5fbb0efa"
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.3.3.tgz#e66e8537a62c9b351ba69b766d7fb70b07ab5e57"
 
 magic-string@^0.24.0:
   version "0.24.0"

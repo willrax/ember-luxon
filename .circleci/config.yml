@@ -47,7 +47,7 @@ jobs:
   test-lts-2.16:
     <<: *container_config
     steps:
-      - *restore_repo
+      - checkout
       - *restore_node_modules
       - run: yarn install
       - run: node_modules/.bin/ember try:one ember-lts-2.16 --skip-cleanup
@@ -55,7 +55,7 @@ jobs:
   test-lts-2.18:
     <<: *container_config
     steps:
-      - *restore_repo
+      - checkout
       - *restore_node_modules
       - run: yarn install
       - run: node_modules/.bin/ember try:one ember-lts-2.18 --skip-cleanup
@@ -63,7 +63,7 @@ jobs:
   test-release:
     <<: *container_config
     steps:
-      - *restore_repo
+      - checkout
       - *restore_node_modules
       - run: yarn install
       - run: node_modules/.bin/ember try:one ember-release --skip-cleanup
@@ -71,7 +71,7 @@ jobs:
   test-beta:
     <<: *container_config
     steps:
-      - *restore_repo
+      - checkout
       - *restore_node_modules
       - run: yarn install
       - run: node_modules/.bin/ember try:one ember-beta --skip-cleanup
@@ -79,7 +79,7 @@ jobs:
   test-canary:
     <<: *container_config
     steps:
-      - *restore_repo
+      - checkout
       - *restore_node_modules
       - run: yarn install
       - run: node_modules/.bin/ember try:one ember-canary --skip-cleanup
@@ -87,7 +87,7 @@ jobs:
   test-default:
     <<: *container_config
     steps:
-      - *restore_repo
+      - checkout
       - *restore_node_modules
       - run: yarn install
       - run: node_modules/.bin/ember try:one ember-default --skip-cleanup

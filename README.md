@@ -24,7 +24,7 @@ See the Luxon [support matrix](https://moment.github.io/luxon/docs/manual/matrix
 ## Usage
 
 ```js
-import { DateTime, Duration, Info, Interval, Settings, Zone } from 'luxon';
+import { DateTime, Duration, Info, Interval, Settings, Zone } from 'ember-luxon';
 import Component from '@ember/component';
 
 export default Component.extend({

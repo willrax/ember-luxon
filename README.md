@@ -3,7 +3,13 @@
 [![NPM version](https://img.shields.io/npm/v/ember-luxon.svg?style=for-the-badge)](https://npmjs.com/package/ember-luxon)
 [![CircleCI](https://img.shields.io/circleci/project/github/willrax/ember-luxon/master.svg?style=for-the-badge)](https://circleci.com/gh/willrax/ember-luxon/tree/master)
 
-An addon to allow importing of [Luxon](https://moment.github.io/luxon/) in your Ember Apps.
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
 
 ## Installation
 
@@ -102,3 +108,7 @@ You can set the precision here to verify if it is the day, millisecond, hour etc
 {{luxon-is-same dateTime dateTimeTwo precision="day"}}     /* true
 {{luxon-is-same dateTime dateTimeThree precision="month"}} /* true
 ```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).

@@ -1,31 +1,33 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { DateTime } from 'luxon';
 
-moduleForComponent('luxon-diff', 'helper:luxon-diff', {
-  integration: true
-});
+module('helper:luxon-diff', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it provides a diff without a precision', function(assert) {
-  let startDate = DateTime.local();
-  let endDate = startDate.plus({ hours: 3 });
+  test('it provides a diff without a precision', async function(assert) {
+    let startDate = DateTime.local();
+    let endDate = startDate.plus({ hours: 3 });
 
-  this.set('startDate', startDate);
-  this.set('endDate', endDate);
+    this.set('startDate', startDate);
+    this.set('endDate', endDate);
 
-  this.render(hbs`{{luxon-diff startDate endDate}}`);
+    await render(hbs`{{luxon-diff startDate endDate}}`);
 
-  assert.equal(this.$().text().trim(),  '10800000');
-});
+    assert.dom('*').hasText('10800000');
+  });
 
-test('it provides a diff with a precision of days', function(assert) {
-  let startDate = DateTime.local();
-  let endDate = startDate.plus({ days: 3 });
+  test('it provides a diff with a precision of days', async function(assert) {
+    let startDate = DateTime.local();
+    let endDate = startDate.plus({ days: 3 });
 
-  this.set('startDate', startDate);
-  this.set('endDate', endDate);
+    this.set('startDate', startDate);
+    this.set('endDate', endDate);
 
-  this.render(hbs`{{luxon-diff startDate endDate precision="days"}}`);
+    await render(hbs`{{luxon-diff startDate endDate precision="days"}}`);
 
-  assert.equal(this.$().text().trim(), '3');
+    assert.dom('*').hasText('3');
+  });
 });

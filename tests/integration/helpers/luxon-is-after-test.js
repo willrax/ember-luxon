@@ -1,31 +1,33 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { DateTime } from 'luxon';
 
-moduleForComponent('luxon-is-after', 'helper:luxon-is-after', {
-  integration: true
-});
+module('helper:luxon-is-after', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it returns true when the date is after', function(assert) {
-  let now = DateTime.local();
-  let after = now.plus({ days: 3 });
+  test('it returns true when the date is after', async function(assert) {
+    let now = DateTime.local();
+    let after = now.plus({ days: 3 });
 
-  this.set('now', now);
-  this.set('after', after);
+    this.set('now', now);
+    this.set('after', after);
 
-  this.render(hbs`{{luxon-is-before now after}}`);
+    await render(hbs`{{luxon-is-before now after}}`);
 
-  assert.equal(this.$().text().trim(), "true");
-});
+    assert.dom('*').hasText('true');
+  });
 
-test('it returns false when the date is before', function(assert) {
-  let now = DateTime.local();
-  let before = now.minus({ days: 3 });
+  test('it returns false when the date is before', async function(assert) {
+    let now = DateTime.local();
+    let before = now.minus({ days: 3 });
 
-  this.set('now', now);
-  this.set('before', before);
+    this.set('now', now);
+    this.set('before', before);
 
-  this.render(hbs`{{luxon-is-before now before}}`);
+    await render(hbs`{{luxon-is-before now before}}`);
 
-  assert.equal(this.$().text().trim(), "false");
+    assert.dom('*').hasText('false');
+  });
 });

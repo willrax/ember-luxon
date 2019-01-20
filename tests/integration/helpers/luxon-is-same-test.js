@@ -1,37 +1,39 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { DateTime } from 'luxon';
 
-moduleForComponent('luxon-is-same', 'helper:luxon-is-same', {
-  integration: true
-});
+module('helper:luxon-is-same', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it has a default', function(assert) {
-  let date = DateTime.local();
-  this.set('dateOne', date);
-  this.set('dateTwo', date);
+  test('it has a default', async function(assert) {
+    let date = DateTime.local();
+    this.set('dateOne', date);
+    this.set('dateTwo', date);
 
-  this.render(hbs`{{luxon-is-same dateOne dateTwo}}`);
+    await render(hbs`{{luxon-is-same dateOne dateTwo}}`);
 
-  assert.equal(this.$().text().trim(), 'true');
-});
+    assert.dom('*').hasText('true');
+  });
 
-test('it allows for a precision', function(assert) {
-  let date = DateTime.local();
-  this.set('dateOne', date);
-  this.set('dateTwo', date.plus({ year: 1 }));
+  test('it allows for a precision', async function(assert) {
+    let date = DateTime.local();
+    this.set('dateOne', date);
+    this.set('dateTwo', date.plus({ year: 1 }));
 
-  this.render(hbs`{{luxon-is-same dateOne dateTwo precision="year"}}`);
+    await render(hbs`{{luxon-is-same dateOne dateTwo precision="year"}}`);
 
-  assert.equal(this.$().text().trim(), 'false');
-});
+    assert.dom('*').hasText('false');
+  });
 
-test('it allows for a precision', function(assert) {
-  let date = DateTime.local();
-  this.set('dateOne', date);
-  this.set('dateTwo', date.plus({ year: 1 }));
+  test('it allows for a precision', async function(assert) {
+    let date = DateTime.local();
+    this.set('dateOne', date);
+    this.set('dateTwo', date.plus({ year: 1 }));
 
-  this.render(hbs`{{luxon-is-same dateOne dateTwo precision="year"}}`);
+    await render(hbs`{{luxon-is-same dateOne dateTwo precision="year"}}`);
 
-  assert.equal(this.$().text().trim(), 'false');
+    assert.dom('*').hasText('false');
+  });
 });

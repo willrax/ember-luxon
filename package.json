@@ -23,7 +23,7 @@
     "ember-auto-import": "^1.2.8",
     "ember-cli-babel": "^6.16.0",
     "intl": "1.2.5",
-    "luxon": "1.3.3"
+    "luxon": "1.12.1"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.7.0",

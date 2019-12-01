@@ -1,5 +1,7 @@
 # ember-luxon
 
+# Deprecated. I would suggest importing luxon through node modules and then creating the helpers required manually or copying them in from this library.
+
 [![NPM version](https://img.shields.io/npm/v/ember-luxon.svg?style=for-the-badge)](https://npmjs.com/package/ember-luxon)
 [![CircleCI](https://img.shields.io/circleci/project/github/willrax/ember-luxon/master.svg?style=for-the-badge)](https://circleci.com/gh/willrax/ember-luxon/tree/master)
 
